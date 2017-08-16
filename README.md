@@ -30,3 +30,10 @@ sudo apt-get install libncurses5:i386 libstdc++6:i386 zlib1g:i386
 sudo apt-get install git
 sudo apt-get install zlib1g-dev
 ```
+
+Para gerar um **APK** android, basta executar dentro da pasta do codigo fonte:
+
+```bash
+buildozer android debug
+```
+O arquivo apk aparecera dentro da pasta "bin" 
