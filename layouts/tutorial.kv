@@ -1,0 +1,75 @@
+<Tutorial>:
+    BoxLayout:
+        orientation: 'vertical'
+        canvas.before:
+            Color:
+                rgba: 1, 1, 1, 1
+            Rectangle:
+                pos: self.pos
+                size: self.size
+        BoxLayout:
+            orientation: 'vertical'
+            id: topBox
+            size_hint: 1, .2
+            canvas.before:
+                Color:
+                    rgba: 1, 1, 1, 1
+                Rectangle:
+                    source: "./OpenSpritesUI/PNG/blue_button00.png"
+                    pos: self.pos
+                    size: self.size
+            Label:
+                text: "[color=000000][b]Tutorial[/b][/color]"
+                markup: True
+        BoxLayout:
+            id: slides
+            size_hint: 1, 1
+            Image:
+                id: slide_img
+                source: "cientista.jpg"
+                allow_stretch: True
+                keep_ratio: False
+        BoxLayout:
+            size_hint: 1, .05
+            canvas.before:
+                Color:
+                    rgba: .34, .45, .59, 1
+                Rectangle:
+                    #source: "./OpenSpritesUI/PNG/blue_button00.png"
+                    pos: self.pos
+                    size: self.size
+        BoxLayout:
+            id: tut_Btns
+            size_hint: 1, .33
+            orientation: 'horizontal'
+            canvas.before:
+                Color:
+                    rgba: 1, 1, 1, 1
+                Rectangle:
+                    pos: self.pos
+                    size: self.size
+            BoxLayout:
+                size_hint: .8, 1
+            Button
+                size_hint: .9, .8
+                id: tut_fow
+                background_color: .2, .2, .2, 0
+                on_press: root.next_slide()
+                canvas.before:
+					Color:
+						rgba: 1, 1, 1, 0.75
+					Rectangle:
+						source: "./OpenSpritesUI/PNG/blue_panel.png"
+						pos: self.pos
+						size: self.size
+                Image:
+                    source: "./OpenSpritesUI/PNG/grey_sliderRight.png"
+                    pos: tut_fow.x+20, tut_fow.y
+                    size: tut_fow.width-40, tut_fow.height-20
+                    allow_stretch: True
+                    keep_ratio: False
+            BoxLayout:
+                size_hint: .8, 1
+        BoxLayout:
+            size_hint: 1, .02
+            

@@ -1,0 +1,69 @@
+<Sobre>:
+    BoxLayout:
+        orientation: 'vertical'
+        canvas.before:
+            Color:
+                rgba: 1, 1, 1, 1
+            Rectangle:
+                pos: self.pos
+                size: self.size
+        BoxLayout:
+            orientation: 'vertical'
+            id: sobreTopBox
+            size_hint: 1, .2
+            canvas.before:
+                Color:
+                    rgba: 1, 1, 1, 1
+                Rectangle:
+                    source: "./OpenSpritesUI/PNG/blue_button00.png"
+                    pos: self.pos
+                    size: self.size
+            Label:
+                text: "[color=000000][b]Sobre[/b][/color]"
+                markup: True
+        BoxLayout:
+            id: sobre_cont
+            size_hint: 1, 1
+            padding: [30, 10, 30, 20]
+            BoxLayout:
+                canvas.before:
+                    Color:
+                        rgba: 1, 1, 1, 1
+                    Rectangle:
+                        source: "./OpenSpritesUI/PNG2/glassPanel.png"
+                        pos: self.pos
+                        size: self.size
+                padding: [0, 20, 0, 0]
+                Label:
+                    id: text_sobre
+                    halign: 'center'
+                    valign: 'top'
+                    text: "[color=000000][b]O JOGO: [/b]ACIBASE é um jogo que apresenta questões envolvendo ácidos e bases, buscando relacionar o conteúdo ao contexto social do aluno.\n[b]PÚBLICO ALVO:[/b] Alunos do Ensino Médio, na faixa etária entre 14 a 18 anos.\n[b]DESENVOLVIMENTO: [/b]O aplicativo ACIBASE foi desenvolvido como produto educacional para a dissertação final do Mestrado Profissional em Ensino de Ciências da Universidade Estadual de Goiás, por Janaína Lopes Xavier com a orientação dos professores: Dr. José Divino dos Santos e Dra. Nyuara Araújo da Silva Mesquita.\n[b]Contato através do e-mail: janainalx@gmail.com[/b][/color]"
+                    markup: True
+        BoxLayout:
+            id: sobre_Btns
+            size_hint: 1, .33
+            orientation: 'horizontal'
+            canvas.before:
+                Color:
+                    rgba: 1, 1, 1, 1
+                Rectangle:
+                    pos: self.pos
+                    size: self.size
+            BoxLayout:
+                size_hint: 1, 1
+            Button:
+                id: sobre_home
+                size_hint: 1, .8
+                text: "Voltar"
+                background_color: .2, .2, .2, 0
+                on_press: root.get_menu()
+                canvas.before:
+					Color:
+						rgba: 1, 1, 1, 0.75
+					Rectangle:
+						source: "./OpenSpritesUI/PNG/blue_panel.png"
+						pos: self.pos
+						size: self.size
+            BoxLayout:
+                size_hint: 1, 1

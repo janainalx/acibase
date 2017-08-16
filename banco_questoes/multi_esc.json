@@ -1,0 +1,166 @@
+[
+
+{
+  "question_id" : 11,
+  "question_type" : "multi_esc",
+  "enunciado" : "Joana sofre com dores no estômago em decorrência de um desequilibrio que pode ser resultado em excesso de produção de ácido clorídrico em seu organismo. Na tentativa de minimizar o problema, ela vai à uma fármacia comprar:",
+  "alta" : "Remédio a base de suco de limão",
+  "altb" : "Remédio antiácido",
+  "altc" : "Remédio com propriedade antioxidante",
+  "altd" : "Remédio com propriedades básicas, como o leite de magnésia",
+  "alte" : "Remédio a base de ácidos fracos",
+  "answer" : "d",
+  "help" : "O composto tem como objetivo neutralizar a ação do ácido."
+},
+
+{
+  "question_id" : 12,
+  "question_type" : "multi_esc",
+  "enunciado" : "Possui um cheiro desagradável de ovos podres, devido ao ácido de fórmula H[sub]2[/sub]S, que possui o nome de:",
+  "alta" : "Ácido clorídrico",
+  "altb" : "Hidróxido de chumbo",
+  "altc" : "Ácido sulfidríco",
+  "altd" : "Hidróxido de sódio",
+  "alte" : "Ácido Fluorídrico",
+  "answer" : "c",
+  "help" : "Pode ser encontrado em erupções vulcânicas, é um ácido forte. ",
+  "image" : "imagens/imagens_multiplaescolha/imagem_ovopodre.png"
+},
+
+{
+  "question_id" : 13,
+  "question_type" : "multi_esc",
+  "enunciado" : "O ácido de fórmula H[sub]2[/sub]CO[sub]3[/sub] se decompõe liberando CO[sub]2[/sub], e está presente em refrigerantes.",
+  "alta" : "Ácido clorídrico",
+  "altb" : "Ácido carbônico",
+  "altc" : "Ácido cianídrico",
+  "altd" : "Ácido hipocloroso",
+  "alte" : "Ácido sulfuríco",
+  "answer" : "b",
+  "help" : "Considerado um ácido fraco é encontrado na chuva, em refrigerantes, bebidas e no sangue.",
+  "image" : "imagens/imagens_multiplaescolha/imagem_refrigerante.png"
+},
+
+{
+  "question_id" : 14,
+  "question_type" : "multi_esc",
+  "enunciado" : "Base de fórmula MgOH[sub]2[/sub] que é utilizado como laxante.",
+  "alta" : "Hidróxido de mangânes II",
+  "altb" : "Hidróxido de chumbo",
+  "altc" : "Hidróxido de cálcio",
+  "altd" : "Hidróxido de sódio",
+  "alte" : "Hidróxido de magnésio",
+  "answer" : "e",
+  "help" : "É uma base fraca,pouco solúvel em água. Obtida pela reação entre sulfato de magnésio e hidróxido de sódio. Utilizada para o refino do açúcar,produção de papel.",
+  "image" : "imagens/imagens_multiplaescolha/imagem_laxante.png"
+},
+
+{
+  "question_id" : 15,
+  "question_type" : "multi_esc",
+  "enunciado" : "Assinale a alternativa que apresenta dois produtos caseiros com propriedades alcalinas:",
+  "alta" : "Leite de magnésia e sabão",
+  "altb" : "Sal e coalhada",
+  "altc" : "Detergente e vinagre",
+  "altd" : "Bicarbonato e açucar",
+  "alte" : "Café e suco de limão",
+  "answer" : "a",
+  "help" : "O primeiro é por Hidróxido de Magnésio, que diminui a acidez no estômago. O segundo é um sal de ácido graxo, utilizado na reação de saponificação"
+},
+
+{
+  "question_id" : 16,
+  "question_type" : "multi_esc",
+  "enunciado" : "Assinale a alternativa que apresenta propriedade ácida, ou seja, pH menor que 7:",
+  "alta" : "Clara de ovo",
+  "altb" : "Suco de tomate",
+  "altc" : "Lágrima",
+  "altd" : "Água do mar",
+  "alte" : "Açucar",
+  "answer" : "b",
+  "help" : "Tem sabor azedo, em papel de tornassol fica vermelho, possui o pH em torno de 4.0-4.5."
+},
+
+{
+  "question_id" : 17,
+  "question_type" : "multi_esc",
+  "enunciado" : "É utilizado na fabricação de detergentes e possui fórmula química NaOH.",
+  "alta" : "Hidróxido de magnédio II",
+  "altb" : "Hidróxido de chumbo",
+  "altc" : "Hidróxido de magnésio",
+  "altd" : "Hidróxido de sódio",
+  "alte" : "Hidróxido de bario",
+  "answer" : "d",
+  "help" : "Conhecido como soda cáustica, usado na fabricação de papel, tecidos, detergentes,etc.",
+  "image" : "imagens/imagens_multiplaescolha/imagem_detergente.png"
+},
+
+{
+  "question_id" : 18,
+  "question_type" : "multi_esc",
+  "enunciado" : "Sabendo que o gás cloridríco(HCl) é um composto molecular gasoso, identifique a afirmativa correta:",
+  "alta" : "O HCl(puro) nas condições ambientes conduz corrente elétrica",
+  "altb" : "O HCl(puro) liquefeito conduz corrente elétrica",
+  "altc" : "O HCl em solução aquosa conduz corrente elétrica",
+  "altd" : "O HCl(puro) no estado sólido conduz corrente elétrica",
+  "alte" : "O HCl em solução aquosa não conduz corrente elétrica",
+  "answer" : "c",
+  "help" : "Para que ocorra a condução de corrente elétrica é necessária a presença de íons,H[sup]+[/sup] e Cl[sup]-[/sup]."
+},
+
+{
+  "question_id" : 19,
+  "question_type" : "multi_esc",
+  "enunciado" : "Os indicadores de pH são substâncias que mudam de cor em função da acidez ou basicidade do meio em que se encontram. Considere um indicador que apresenta a cor amarela em meio ácido, a cor verde em meio básico. É correto afirmar que:",
+  "alta" : "Em contato com uma solução aquosa de NaOH, a cor desse indicador será amarela",
+  "altb" : "Em contato com uma solução aquosa de HCl, a cor desse indicador será azul",
+  "altc" : "Em contato com uma solução de amoníaco, a cor desse indicador será verde",
+  "altd" : "Em contato com suco de limão, a cor desse indicador será amarela",
+  "alte" : "Em contato com uma solução de cloreto de sódio, a cor desse indicador será amarela",
+  "answer" : "d",
+  "help" : "Substâncias ácidas apresentam o íon hidrônio e possuem sabor azedo, enquanto que básicas apresentam o íon hidroxila e são adstringentes."
+},
+
+{
+  "question_id" : 120,
+  "question_type" : "multi_esc",
+  "enunciado" : "Um acidente resultou na quebra de um béquer contendo 300ml de uma solução aquosa de ácido sulfúrico(H[sub]2[/sub]SO[sub]4[/sub]). Para minimizar os efeitos do ácido, uma possível solução seria:",
+  "alta" : "Jogar água sobre o ácido, a fim de lavar o local afetado",
+  "altb" : "Adicionar um óxido básico ao ácido, a fim de neutralizá-lo",
+  "altc" : "Ádicionar um ácido fraco ao ácido, a fim de neutralizá-lo",
+  "altd" : "Jogar um sal, que irá absorver o ácido",
+  "alte" : "Jogar água oxigenada, devido à sua propriedade de neutralização de ácidos ",
+  "answer" : "b",
+  "help" : "Ácidos reagem com óxidos básicos, dando origem a sal e água.",
+  "imagem_help": "imagem_reacaoquimica"
+
+},
+
+{
+  "question_id" : 121,
+  "question_type" : "multi_esc",
+  "enunciado" : "Ácido utilizado na fabricação de 'Geleca', 'amoeba' ou 'geleinha', um brinquedo industrializado que apresenta características elásticas:",
+  "alta" : "Ácido cloroso",
+  "altb" : "Ácido bromídrico",
+  "altc" : "Ácido carbônico",
+  "altd" : "Ácido clórico",
+  "alte" : "Ácido bórico",
+  "answer" : "e",
+  "help" : "É um oxiácido com três hidrogênios na sua composição, quando ionizado resulta em três mols de cátions hidrônios e o ânion borato BO[sub]3[/sub] [sup]-3[/sup].",
+  "image" : "imagens/imagens_multiplaescolha/imagem_geleia.png"
+},
+
+{
+  "question_id" : 122,
+  "question_type" : "multi_esc",
+  "enunciado" : "As reações de neutralização ocorrem quando misturamos um ácido e uma base, de modo que o pH do meio é neutralizado e obtém como produto: ",
+  "alta" : "Óxido e sal",
+  "altb" : "Sal e água",
+  "altc" : "Oxiácido e sal",
+  "altd" : "Base e água",
+  "alte" : "Ácido e sal",
+  "answer" : "b",
+  "help" : "O ácido libera no meio cátions H[sup]+[/sup] que se unem aos ânions OH[sup]-[/sup] liberados pela base. O sal é formado pela união do ânion do ácido com o cátion da base."
+}
+
+]

@@ -1,0 +1,35 @@
+<Brick>:
+    #width: self.box_size_w/10
+    #height: self.box_size_h/15
+    size_hint: None, None
+    size: self.box_size_h/8, self.box_size_h/8
+    #x: 0
+    #y: 0
+    #corrigir travamento na borda
+    x: min(max(self.x, ((self.box_size_w-self.width)*self.start_w_porc)), self.box_size_w-self.width) #limit area, must set property app.root.width and app.root.height
+    y: min(max(self.y, (self.box_size_h*self.start_h_porc)), self.box_size_h-self.height)
+
+    background_color: 1, 1, 1, 1
+    border_color: 0.2, 0.3, 0.55, 0.8
+
+    drag_rectangle: self.x, self.y, self.width, self.height
+    drag_timeout: 10000000
+    drag_distance: 0
+
+    canvas.before:
+        Color:
+            rgba: self.background_color
+        Rectangle:
+            source: self.imgs#
+            pos: self.pos
+            size: self.size
+
+        Color:
+            rgba: self.border_color
+        Line:
+            points: self.x, self.y, self.x + self.width, self.y, self.x + self.width, self.y + self.height, self.x, self.y + self.height, self.x, self.y
+            width: 2
+    #Image:
+    #    source: root.imgs
+    #    pos: root.pos
+    #    size: root.size

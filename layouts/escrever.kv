@@ -1,0 +1,200 @@
+<Escrever>:
+	BoxLayout:
+		id: Esc_mcanvas
+		orientation: "vertical"
+		canvas.before:
+            Color:
+                rgba: .34, .45, .59, 1
+            Rectangle:
+                pos: self.pos
+                size: self.size   
+		BoxLayout:
+			size_hint: 1, .18
+			canvas.before:
+				Color:
+					rgba: .34, .45, .59, 1
+				Rectangle:
+					pos: self.pos
+					size: self.size
+			BoxLayout:
+				size_hint: .8, 1
+			BoxLayout:
+				size_hint: 1.1, .8
+				Button:
+					id: magicPotion_btn_escrever
+					background_normal: "./OpenSpritesUI/PNG/grey_sliderUp.png"
+					background_down: "./OpenSpritesUI/PNG/grey_sliderUp.png"
+					#background_normal: "./OpenSpritesUI/PNG/blue_sliderUp.png"
+					#background_down: "./OpenSpritesUI/PNG/blue_sliderUp.png"
+					text: "[color=666666][b]Bônus[/b][/color]"
+					markup: True
+					font_size: "18sp"
+					font_name: "./OpenSpritesUI/Font/Ranchers-Regular.ttf"
+					color: 1, 1, 1, .2
+					on_press: root.apply_magic()
+					#Label:
+					#	id: lb_magic
+					#	font_name: "./OpenSpritesUI/Font/Ranchers-Regular.ttf"
+					#	text: "[color=FFFFFF][b]Bonus[/b][/color]"
+						#text: "[color=3232DD][b]Dica:[/b][/color]"
+						#text: "[color=666666][b]Dica:[/b][/color]"
+					#	font_size: "20sp"
+					#	pos: magicPotion_btn.x+6, magicPotion_btn.y-25
+					#	markup: True
+					#Image:
+					#	id: img_magic
+					#	source: './IMAGENS_JOGO/Pontos_jogo/magic3.gif'
+					#	width: magicPotion_btn.width
+					#	height: (magicPotion_btn.height*.7)
+					#	pos: magicPotion_btn.x, magicPotion_btn.y+(self.height/2)
+						#color: .9, .9, .9, .75
+					#	color: 1, 1, 1, 1
+			BoxLayout:
+				size_hint: .2, 1
+			BoxLayout:
+				size_hint: .4, .8
+				pos: (self.x, self.y)
+				Button:
+					id: btn_help_esc
+					pos: (root.width*0.76), (root.height*0.1)
+					font_name: "./OpenSpritesUI/Font/Ranchers-Regular.ttf"
+					text: "[b]Ajuda[/b]"
+					font_size: root.width/20
+					markup: True
+					background_normal: "./OpenSpritesUI/png3/Blue/brickBlue01.png"
+					background_down: "./OpenSpritesUI/png3/Blue/brickBlue01.png"
+			BoxLayout:
+				size_hint: .2, 1    
+		BoxLayout:
+		    size_hint: 1, 1
+		    orientation: "vertical"
+			BoxLayout:
+				size_hint: 1, .15
+				orientation: 'horizontal'
+				BoxLayout:
+					size_hint: .05, 1
+				BoxLayout:
+					id: esc_scorebox
+					#size_hint: 1, .08
+					#orientation: 'lr-tb'#rl-tb'
+					canvas.before:
+						Color:
+							rgba: 1, 1, 1, 1
+						Rectangle:
+							source: "./OpenSpritesUI/PNG2/metalPanel_blueCorner.png"
+							pos: self.pos
+							size: self.size 
+				BoxLayout:
+					size_hint: .05, 1    
+			BoxLayout:
+				size_hint: .9, 1
+				orientation: "vertical"
+				pos: self.pos
+				canvas.before:
+					Color:
+						rgba: 1, 1, 1, 1
+					Rectangle:
+						pos: (root.width/20), self.y
+						size: self.size
+				BoxLayout:
+					size_hint: .95, 1
+					orientation: "horizontal"
+					pos: self.pos
+					BoxLayout:
+						id: esc_qst_box
+						orientation: 'horizontal'
+						size_hint: 1, .97
+						pos: root.width/20, root.height*0.51
+						canvas.before:
+							Color:
+								rgba: 1, 1, 1, 1
+							Rectangle:
+								source: "image1.jpg"
+								pos: (root.width/21+root.width/40), root.height*0.51
+								size: self.size
+						BoxLayout:
+							size_hint: .11, 1
+						Label:
+							id: enunciado
+							text: ""
+							markup: True
+							font_size: root.width/22#"24sp"
+							valign: 'top'
+							halign: 'left'
+							text_size: esc_qst_box.width*0.89, esc_qst_box.height+17
+			BoxLayout:
+				size_hint: 1, .2
+		BoxLayout:
+			id: Fundo_REsc
+			size_hint: 1, .64
+			pos: 0, root.height/8
+			orientation: 'vertical'
+			canvas.before:
+				Color:
+					rgba: .25, .25, .25, 1
+				Rectangle:
+					pos: Fundo_REsc.pos
+					size: Fundo_REsc.size
+			BoxLayout:
+				orientation: "vertical"
+				canvas.before:
+					Color:
+						rgba: 1, 1, 1, .1
+					Rectangle:
+						pos: Fundo_REsc.pos
+						size: Fundo_REsc.size
+				Label:
+					size_hint: 1, .1
+					text: "Resposta"
+				BoxLayout:
+					size_hint: 1, 1
+					canvas.before:
+						Color:
+							rgba: 1, 1, 1, .6
+						Rectangle:
+							pos: self.pos
+							size: self.size
+					TextInput:
+						id: esc_txt_inpt
+						cursor_color: 0,0,1,1
+						font_name: "./OpenSpritesUI/Font/Ranchers-Regular.ttf"
+						#cursor_width: 10
+						size_hint: 1, 1
+						multiline: True
+						background_color: (1, 1, 1, .7)
+						foreground_color: (0,0,0, 1)
+						background_normal: "cientista.jpg"
+						background_active: "cientista.jpg"
+						text_size: self.size
+						font_size: self.width/7
+					#text_size: esc_txt_inpt.size
+					#text: "[color=000000]Teste de texto[/color]"
+					#markup: True
+
+		BoxLayout:
+		    size_hint: 1, .26
+		    orientation: "vertical"
+		    BoxLayout:
+			    size_hint: 1, .08
+		    BoxLayout:
+			    size_hint: 1, 1
+			    orientation: "horizontal"
+                BoxLayout:
+                    size_hint: .23, .5
+                Button:
+                    id: btn_Conf_escr
+					font_name: "./OpenSpritesUI/Font/Ranchers-Regular.ttf"
+                    text: "[color=FFFFFF]Próximo[/color]"
+					background_normal: "./OpenSpritesUI/PNG/grey_button01.png"
+					background_down: "./OpenSpritesUI/PNG/grey_button01.png"
+                    size_hint: 1, 1
+                    markup: True
+                    font_size: root.width/9
+                    bold: True
+                    on_press: root.next_question()
+                    pos: self.pos
+                    background_color: (0.37, 0.45, 0.92, 1.0)
+                BoxLayout:
+                    size_hint: .23, .5
+		    BoxLayout:
+			    size_hint: 1, .2

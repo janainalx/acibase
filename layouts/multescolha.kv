@@ -1,0 +1,368 @@
+<Multescolha>:
+    BoxLayout:
+		id: mcanvas
+		orientation: "vertical"
+		canvas.before:
+            Color:
+                rgba: .34, .45, .59, 1
+            Rectangle:
+                pos: self.pos
+                size: self.size  
+		BoxLayout:
+			id: mesc_menu
+			size_hint: 1, .20
+			canvas.before:
+				Color:
+					rgba: .34, .45, .59, 1
+				Rectangle:
+					pos: self.pos
+					size: self.size
+			BoxLayout:
+				size_hint: .8, 1
+			BoxLayout:
+				size_hint: 1.1, .8
+				Button:
+					id: magicPotion_btn
+					background_normal: "./OpenSpritesUI/PNG/grey_sliderUp.png"
+					background_down: "./OpenSpritesUI/PNG/grey_sliderUp.png"
+					#background_normal: "./OpenSpritesUI/PNG/blue_sliderUp.png"
+					#background_down: "./OpenSpritesUI/PNG/blue_sliderUp.png"
+					text: "[color=666666][b]Bônus[/b][/color]"
+					markup: True
+					font_size: "18sp"
+					font_name: "./OpenSpritesUI/Font/Ranchers-Regular.ttf"
+					color: 1, 1, 1, .2
+					on_press: root.apply_magic()
+					#Label:
+					#	id: lb_magic
+					#	font_name: "./OpenSpritesUI/Font/Ranchers-Regular.ttf"
+					#	text: "[color=FFFFFF][b]Bonus[/b][/color]"
+						#text: "[color=3232DD][b]Dica:[/b][/color]"
+						#text: "[color=666666][b]Dica:[/b][/color]"
+					#	font_size: "20sp"
+					#	pos: magicPotion_btn.x+6, magicPotion_btn.y-25
+					#	markup: True
+					#Image:
+					#	id: img_magic
+					#	source: './IMAGENS_JOGO/Pontos_jogo/magic3.gif'
+					#	width: magicPotion_btn.width
+					#	height: (magicPotion_btn.height*.7)
+					#	pos: magicPotion_btn.x, magicPotion_btn.y+(self.height/2)
+						#color: .9, .9, .9, .75
+					#	color: 1, 1, 1, 1
+			BoxLayout:
+				size_hint: .2, 1
+			BoxLayout:
+				size_hint: .4, .8
+				pos: (self.x, self.y)
+				Button:
+					id: btn_help_mesc
+					pos: (root.width*0.76), (root.height*0.1)
+					font_name: "./OpenSpritesUI/Font/Ranchers-Regular.ttf"
+					text: "[b]Ajuda[/b]"
+					font_size: root.width/20
+					markup: True
+					background_normal: "./OpenSpritesUI/png3/Blue/brickBlue01.png"
+					background_down: "./OpenSpritesUI/png3/Blue/brickBlue01.png"
+			BoxLayout:
+				size_hint: .2, 1    
+		BoxLayout:
+			id: Fundo_PMultEsc
+		    size_hint: 1, .8
+		    orientation: "vertical"
+			BoxLayout:
+				size_hint: 1, .15
+				orientation: 'horizontal'
+				BoxLayout:
+					size_hint: .05, .05
+				BoxLayout:
+					id: mesc_scorebox
+					#size_hint: 1, .08
+					#orientation: 'lr-tb'#rl-tb'
+					canvas.before:
+						Color:
+							rgba: 1, 1, 1, 1
+						Rectangle:
+							source: "./OpenSpritesUI/PNG2/metalPanel_blueCorner.png"
+							pos: self.pos
+							size: self.size 
+				BoxLayout:
+					size_hint: .05, .05
+			BoxLayout:
+				size_hint: .9, .9
+				orientation: "vertical"
+				pos: self.pos
+				canvas.before:
+					Color:
+						rgba: 1, 1, 1, 1
+					Rectangle:
+						pos: (root.width/20), self.y
+						size: self.size
+				BoxLayout:
+					id: Box_PMultEsc
+					size_hint: .95, 1
+					orientation: "horizontal"
+					pos: self.pos
+					BoxLayout:
+						id: box_perg_mesc
+						orientation: 'horizontal'
+						size_hint: 1, .97
+						pos: root.width/20, root.height*0.51
+						canvas.before:
+							Color:
+								rgba: 1, 1, 1, 1
+							Rectangle:
+								source: "image1.jpg"
+								pos: (root.width/21+root.width/40), root.height*0.55
+								size: self.size
+						BoxLayout:
+							size_hint: .11, 1
+						Label:
+							id: lab_perg_mesc
+							text: "[color=FFFFFF][/color]"
+							markup: True
+							font_size: root.width/23#"24sp"
+							valign: 'top'
+							halign: 'left'
+							text_size: box_perg_mesc.width*0.89, box_perg_mesc.height+5
+			BoxLayout:
+				size_hint: 1, .05
+		BoxLayout:
+			size_hint: 1, .8
+			orientation: "horizontal"
+			BoxLayout:
+				size_hint: .03, 1
+			BoxLayout:
+				id: Fundo_RMultEsc
+				orientation: "vertical"
+				canvas.before:
+					Color:
+						rgba: 1, 1, 1, .8
+					Rectangle:
+						id: bg_image
+						source: root.bg_image
+						pos: (Fundo_RMultEsc.x+(Fundo_RMultEsc.width*0.2)), Fundo_RMultEsc.y
+						size: (Fundo_RMultEsc.width*0.8), Fundo_RMultEsc.height
+				BoxLayout:
+					id: multesc_resp1
+					orientation: 'horizontal'
+					canvas.before:
+						Color:
+							rgba: 1, 1, 1, .2
+						Rectangle:
+							pos: self.pos
+							size: self.size
+					ToggleButton:
+						id: a
+						group: 'respostas'
+						size_hint: .25, 1
+						background_normal: "./OpenSpritesUI/PNG/grey_box.png"
+						background_down: "./OpenSpritesUI/PNG/blue_boxCheckmark.png"
+						border: 0, 0, 0, 0
+					BoxLayout:
+						size_hint: .006, 1
+					BoxLayout:
+						id: cx_txt_RME1
+						size_hint: 1, .95
+						canvas.before:
+							Color:
+								rgba: .34, .45, .59, .1
+							Rectangle:
+								pos: cx_txt_RME1.x, cx_txt_RME1.y+(cx_txt_RME1.y*0.003)
+								size: cx_txt_RME1.size
+						Label:
+							id: alta
+							max_lines: 2
+							text_size: cx_txt_RME1.width, cx_txt_RME1.height
+							font_size: (((cx_txt_RME1.width/1.5) + (cx_txt_RME1.height*7))/45)
+							halign: 'left'
+							valign: 'middle'
+							text: "[color=000000]Resposta de numero 1[/color]"
+							markup: True
+							bold: True
+				BoxLayout:
+					size_hint: 1, .05
+				BoxLayout:
+					id: multesc_resp2
+					orientation: 'horizontal'
+					canvas.before:
+						Color:
+							rgba: 1, 1, 1, .2
+						Rectangle:
+							pos: self.pos
+							size: self.size
+					ToggleButton:
+						id: b
+						group: 'respostas'
+						size_hint: .25, 1
+						background_normal: "./OpenSpritesUI/PNG/grey_box.png"
+						background_down: "./OpenSpritesUI/PNG/blue_boxCheckmark.png"
+						border: 0, 0, 0, 0
+					BoxLayout:
+						size_hint: .006, 1
+					BoxLayout:
+						id: cx_txt_RME2
+						size_hint: 1, .95
+						canvas.before:
+							Color:
+								rgba: .34, .45, .59, .1
+							Rectangle:
+								pos: cx_txt_RME2.x, cx_txt_RME2.y+(cx_txt_RME2.y*0.003)
+								size: cx_txt_RME2.size
+						Label:
+							id: altb
+							max_lines: 2
+							text_size: cx_txt_RME2.width, cx_txt_RME2.height
+							font_size: (((cx_txt_RME2.width/1.5) + (cx_txt_RME2.height*7))/45)
+							halign: 'left'
+							valign: 'middle'
+							text: "[color=000000]Resposta de numero 2[/color]"
+							markup: True
+							bold: True
+				BoxLayout:
+					size_hint: 1, .05
+				BoxLayout:
+					id: multesc_resp3
+					orientation: 'horizontal'
+					canvas.before:
+						Color:
+							rgba: 1, 1, 1, .2
+						Rectangle:
+							pos: self.pos
+							size: self.size
+					ToggleButton:
+						id: c
+						group: 'respostas'
+						size_hint: .25, 1
+						background_normal: "./OpenSpritesUI/PNG/grey_box.png"
+						background_down: "./OpenSpritesUI/PNG/blue_boxCheckmark.png"
+						border: 0, 0, 0, 0
+					BoxLayout:
+						size_hint: .006, 1
+					BoxLayout:
+						id: cx_txt_RME3
+						size_hint: 1, .95
+						canvas.before:
+							Color:
+								rgba: .34, .45, .59, .1
+							Rectangle:
+								pos: cx_txt_RME3.x, cx_txt_RME3.y+(cx_txt_RME3.y*0.003)
+								size: cx_txt_RME3.size
+						Label:
+							id: altc
+							max_lines: 2
+							text_size: cx_txt_RME3.width, cx_txt_RME3.height
+							font_size: (((cx_txt_RME3.width/1.5) + (cx_txt_RME3.height*7))/45)
+							halign: 'left'
+							valign: 'middle'
+							text: "[color=000000]Resposta de numero 3[/color]"
+							markup: True
+							bold: True
+				BoxLayout:
+					size_hint: 1, .05
+				BoxLayout:
+					id: multesc_resp4
+					orientation: 'horizontal'
+					canvas.before:
+						Color:
+							rgba: 1, 1, 1, .2
+						Rectangle:
+							pos: self.pos
+							size: self.size
+					ToggleButton:
+						id: d
+						group: 'respostas'
+						size_hint: .25, 1
+						background_normal: "./OpenSpritesUI/PNG/grey_box.png"
+						background_down: "./OpenSpritesUI/PNG/blue_boxCheckmark.png"
+						border: 0, 0, 0, 0
+					BoxLayout:
+						size_hint: .006, 1
+					BoxLayout:
+						id: cx_txt_RME4
+						size_hint: 1, .95
+						canvas.before:
+							Color:
+								rgba: .34, .45, .59, .1
+							Rectangle:
+								pos: cx_txt_RME4.x, cx_txt_RME4.y+(cx_txt_RME4.y*0.003)
+								size: cx_txt_RME4.size
+						Label:
+							id: altd
+							max_lines: 2
+							text_size: cx_txt_RME4.width, cx_txt_RME4.height
+							font_size: (((cx_txt_RME4.width/1.5) + (cx_txt_RME4.height*7))/45)
+							halign: 'left'
+							valign: 'middle'
+							text: "[color=000000]Resposta de numero 4[/color]"
+							markup: True
+							bold: True
+				BoxLayout:
+					size_hint: 1, .05
+				BoxLayout:
+					id: multesc_resp5
+					orientation: 'horizontal'
+					canvas.before:
+						Color:
+							rgba: 1, 1, 1, .2
+						Rectangle:
+							pos: self.pos
+							size: self.size
+					ToggleButton:
+						id: e
+						group: 'respostas'
+						background_normal: "./OpenSpritesUI/PNG/grey_box.png"
+						background_down: "./OpenSpritesUI/PNG/blue_boxCheckmark.png"
+						border: 0, 0, 0, 0
+						size_hint: .25, 1
+					BoxLayout:
+						size_hint: .006, 1
+					AnchorLayout:
+						id: cx_txt_RME5
+						size_hint: 1, .95
+						canvas.before:
+							Color:
+								rgba: .34, .45, .59, .1
+							Rectangle:
+								pos: cx_txt_RME5.x, cx_txt_RME5.y+(cx_txt_RME5.y*0.003)
+								size: cx_txt_RME5.size
+						Label:
+							id: alte
+							max_lines: 2
+							text_size: cx_txt_RME5.width, cx_txt_RME5.height
+							font_size: (((cx_txt_RME5.width/1.5) + (cx_txt_RME5.height*7))/45)
+							halign: 'left'
+							valign: 'middle'
+							text: "[color=000000]Resposta de numero 5, vamos ver o que acontece quando o nosso texto cresce tanto que nao vai caber em uma unica linha[/color]"
+							markup: True
+							bold: True
+
+			BoxLayout:
+				size_hint: .03, 1
+		BoxLayout:
+			size_hint: 1, .32
+			orientation: "vertical"
+			BoxLayout:
+				size_hint: 1, .08
+			BoxLayout:
+				size_hint: 1, 1
+				orientation: "horizontal"
+				BoxLayout:
+					size_hint: .23, .5
+				Button:
+					id: btn_Conf_escr
+					font_name: "./OpenSpritesUI/Font/Ranchers-Regular.ttf"
+					text: "[color=FFFFFF]Próximo[/color]"
+					background_normal: "./OpenSpritesUI/PNG/grey_button01.png"
+					background_down: "./OpenSpritesUI/PNG/grey_button01.png"
+					size_hint: 1, 1
+					markup: True
+					font_size: root.width/9
+					bold: True
+					on_press: root.next_question()
+					pos: self.pos
+					background_color: (0.37, 0.45, 0.92, 1.0)
+				BoxLayout:
+					size_hint: .23, .5
+			BoxLayout:
+				size_hint: 1, .2  

@@ -1,0 +1,92 @@
+[
+
+{
+  "question_id" : 31,
+  "question_type" : "arrastar",
+  "enunciado" : "Dentre os produtos abaixo, aqueles que possuem o pH menor que 7 são:",
+  "options" : ["id_33/imagem_uva.png", "id_33/imagem_limao.png", "id_33/imagem_detergente.png", "id_33/imagem_vinagre.png", "id_33/imagem_pasta.png"],
+  "answer" : ["id_33/imagem_uva.png", "id_33/imagem_limao.png", "id_33/imagem_vinagre.png"],
+  "help" : "Tem sabor azedo, em papel de tornassol fica vermelho."
+},
+
+{
+  "question_id" : 32,
+  "question_type" : "arrastar",
+  "enunciado" : "Em meio ácido apresenta ser incolor, e em meio básico apresenta cor vermelha:",
+  "options" : ["id_34/imagem_fenolftaleina.png", "id_34/imagem_azulbromotimol.png", "id_34/imagem_laranjadometila.png", "id_34/imagem_papeltornassol.png"],
+  "answer" : ["id_34/imagem_fenolftaleina.png"],
+  "help" : "Um indicador muito usado é o papel de tornassol, que apresenta cor azul na presença de bases, já o azul de bromotimol apresenta cor amarela para ácidos, enquanto que o alaranjado de metila passa a ter coloração vermelha."
+},
+
+{
+  "question_id" : 33,
+  "question_type" : "arrastar",
+  "enunciado" : "Na natureza existem muitas substâncias que podem atuar como indicadores ácido-base naturais. Um dos mais conhecidos é o extrato de repolho roxo. Determine a cor que a solução de repolho roxo apresentará na presença de um ácido e uma base:",
+  "options" : ["id_35/imagem_amarelo.png", "id_35/imagem_azul.png", "id_35/imagem_verde.png", "id_35/imagem_vermelho.png"],
+  "answer" : ["id_35/imagem_vermelho.png", "id_35/imagem_verde.png"],
+  "help" : "Esse indicador adquire coloração vermelha em meio ácido e coloração verde em meio básico.",
+  "image": "imagens/imagens_arrastar/id_35/imagem_repolhoroxo.png"
+},
+
+{
+  "question_id" : 34,
+  "question_type" : "arrastar",
+  "enunciado" : "A cor das hortênsias depende da acidez dos solo. A cor azul predominam em pH ácido e a cor rosa, em pH básico. Sendo assim, de acordo com a hortênsia da figura, arraste para o campo específico os possíveis valores de pH:",
+  "options" : ["id_36/imagem_3,2.png", "id_36/imagem_4,3.png", "id_36/imagem_5,1.png", "id_36/imagem_7,0.png", "id_36/imagem_7,3.png", "id_36/imagem_8,2.png"],
+  "answer" : ["id_36/imagem_3,2.png", "id_36/imagem_4,3.png", "id_36/imagem_5,1.png"],
+  "help" : "O pH do solo varia de acordo com a região em que está localizado, as regiões ricas em calcário correspondem aos solos alcalinos (pH ≥ 7). Os solos argilosos provenientes de regiões úmidas como margem de rios e pântanos são ácidos (pH ≤ 7).",
+  "image": "imagens/imagens_arrastar/id_36/imagem_hortensia.png"
+
+},
+
+
+{
+  "question_id" : 35,
+  "question_type" : "arrastar",
+  "enunciado" : "De acordo com o conceito de Arrhenius, uma das formas de se classificar as bases relaciona-se à quantidade de ânions OH[sup]-[/sup]. Sendo assim, as bases monobásicas são:",
+  "options" : ["id_38/imagem_hidroxidodecalcio.png", "id_38/imagem_hidroxidodeestroncio.png", "id_38/imagem_hidroxidodeferro.png", "id_38/imagem_hidroxidodeprata.png", "id_38/imagem_hidroxidodesodio.png"],
+  "answer" : ["id_38/imagem_hidroxidodeprata.png", "id_38/imagem_hidroxidodesodio.png"],
+  "help" : "As bases podem ser classificadas em:Monobase: possui apenas um íon OH[sup]-[/sup]. Dibase: dois íons OH[sup]-[/sup]. Tribase:três íons OH[sup]-[/sup]. Tetrabase:quatro íons OH[sup]-[/sup]."
+},
+
+{
+  "question_id" : 36,
+  "question_type" : "arrastar",
+  "enunciado" : "A água régia é uma mistura de ácido nítrico e ácido clorídrico concentrados. É um líquido altamente corrosivo de coloração alaranjada, sendo uma das poucas substâncias que pode dissolver o ouro(Au) e a prata(Ag). As fórmulas dos ácidos envolvidos são:",
+  "options" : ["id_39/imagem_acidocloridrico.png", "id_39/imagem_acidohipoclorico.png", "id_39/imagem_acidohipocloroso.png", "id_39/imagem_acidonitrico.png", "id_39/imagem_acidonitroso.png"],
+  "answer" : ["id_39/imagem_acidonitrico.png", "id_39/imagem_acidocloridrico.png"],
+  "help" : "O ácido nítrico é um potente oxidante. No ácido clorídrico os íons cloreto reagem com os íons de ouro."
+},
+
+{
+  "question_id" : 37,
+  "question_type" : "pares",
+  "enunciado" : "Está presente no estômago e auxilia na digestão dos alimentos, formado pelos íons:",
+  "cation" : ["id_31/imagem_hidracido.png"],
+  "anion" : ["id_31/imagem_brometo.png", "id_31/imagem_cloreto.png", "id_31/imagem_fluoreto.png", "id_31/imagem_hidroxido.png", "id_31/imagem_iodeto.png"],
+  "answer" : ["id_31/imagem_hidracido.png", "id_31/imagem_cloreto.png"],
+  "help" : "Nome oficial de Ácido cloridríco, e também é conhecido como Ácido muríático."
+},
+
+{
+  "question_id" : 38,
+  "question_type" : "pares",
+  "enunciado" : "Ácido usado como acidulante em refrigerantes, balas e goma de mascar, é formado pelos íons:",
+  "cation" : ["id_32/imagem_hidracido.png"],
+  "anion" : ["id_32/imagem_fosfato.png", "id_32/imagem_fosfito.png", "id_32/imagem_hidroxido.png", "id_32/imagem_metafosfato.png", "id_32/imagem_pirofosfato.png"],
+  "answer" : ["id_32/imagem_hidracido.png", "id_32/imagem_fosfato.png"],
+  "help" : "Nome oficial de Ácido fosfórico "
+},
+
+{
+  "question_id" : 39,
+  "question_type" : "pares",
+  "enunciado" : "De acordo com a teoria de Bronsted e Lowry: Ácido é toda espécie química, íon ou molécula capaz de doar um próton, enquanto a base é capaz de receber um próton. Sabendo disso indique quais serão os íons formados na reação entre NH[sub]3[/sub] e HCl?",
+  "cation" : ["id_37/imagem_amonio.png", "id_37/imagem_hidracido.png", "id_37/imagem_manganes4.png", "id_37/imagem_niquel2.png"],
+  "anion" : ["id_37/imagem_clorito.png","id_37/imagem_cloreto.png"],
+  "answer" : ["id_37/imagem_amonio.png", "id_37/imagem_cloreto.png"],
+  "help" : "A reação de neutralização será uma transferência de prótons entre um ácido e uma base,resultando nos íons amônio e cloreto."
+}
+
+
+]

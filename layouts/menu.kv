@@ -1,0 +1,111 @@
+<MenuScreen>:	
+	FloatLayout:
+		id: mcanvas
+		canvas.before:
+			Color:
+				rgba: 1, 1, 1, 1
+			Rectangle:
+				source: "equip1.jpg"
+				pos: 0, 0
+				size: root.width, root.height
+
+		BoxLayout:
+			size_hint: 0.9, 0.15
+			canvas.before:
+				Color:
+					rgba: 1, 1, 1, .95
+				Rectangle:
+					source: "./OpenSpritesUI/png3/Blue/brickBlue07.png"
+					pos: root.width/20, root.height-(root.height*0.15)
+					size: self.size
+		
+		Image:
+			id: imag
+			source: 'chemistry-161145.png'
+			size_hint: 0.1, 0.15
+			pos: root.width/10, root.height-(root.height*0.15)
+
+		Image:
+			id: imag2
+			source: 'chemistry-161145.png'
+			size_hint: 0.1, 0.15
+			pos: (root.width/10)*8, root.height-(root.height*0.15)
+
+		Label:
+			size_hint: 0.9, 0.15
+			pos: root.width/20, root.height-(root.height*0.15)
+			#pos: (root.width/17), (imag.y)
+			id: appTitle
+			font_name: "./OpenSpritesUI/Font/Ranchers-Regular.ttf"
+			text: "[color=FFFFFF]ACIBASE[/color]"
+			markup: True
+			#size: self.texture_size
+			font_size: mcanvas.width/10
+			bold: True
+
+		BoxLayout:
+			id: menuBtns
+			orientation: "vertical"
+			size_hint: 0.8, 0.8
+			pos: root.width*0.1, 0
+			canvas.before:
+				Color:
+					rgba: 1, 1, 1, 0
+				Rectangle:
+					pos: root.width*0.1, 0
+					size: self.size
+			Button:
+				id: btnJogo
+				background_color: .2, .2, .2, 0
+				text: "Jogar"
+				font_name: "./OpenSpritesUI/Font/Ranchers-Regular.ttf"
+				font_size: mcanvas.width/8
+				bold: True
+				on_press: root.getgame()
+				canvas.before:
+					Color:
+						rgba: 1, 1, 1, 0.75
+					Rectangle:
+						source: "./OpenSpritesUI/PNG/blue_panel.png"
+						pos: self.pos
+						size: self.size
+			BoxLayout:
+				size_hint: 0.1, 0.05
+
+			Button:
+				id: btnTutorial
+				background_color: .2, .2, .2, 0
+				font_name: "./OpenSpritesUI/Font/Ranchers-Regular.ttf"
+				text: "Tutorial"
+				font_size: mcanvas.width/8
+				on_press: root.get_tutorial()
+				bold: True
+				canvas.before:
+					Color:
+						rgba: 1, 1, 1, 0.75
+					Rectangle:
+						source: "./OpenSpritesUI/PNG/blue_panel.png"
+						pos: self.pos
+						size: self.size
+			BoxLayout:
+				size_hint: 0.1, 0.05
+
+			Button:
+				id: btnSobre
+				background_color: .2, .2, .2, 0
+				font_name: "./OpenSpritesUI/Font/Ranchers-Regular.ttf"
+				text: "Sobre"
+				font_size: mcanvas.width/8
+				on_press: root.get_sobre()
+				bold: True
+				canvas.before:
+					Color:
+						rgba: 1, 1, 1, 0.75
+					Rectangle:
+						source: "./OpenSpritesUI/PNG/blue_panel.png"
+						pos: self.pos
+						size: self.size
+			BoxLayout:
+				size_hint: 0.1, 0.05
+			BoxLayout:
+				size_hint: 0.1, 0.05

@@ -1,0 +1,78 @@
+[
+
+{
+  "question_id" : 21,
+  "question_type" : "escrever",
+  "enunciado" : "Está presente nas tinturas de cabelo e possui a fórmula química NH[sub]4[/sub]OH.",
+  "answer" : "hidroxido de amonio",
+  "help" : "Substância obtida a partir da reação entre amônia anidra (NH[sub]3[/sub]) e água.",
+  "image" : "imagens/imagens_escrever/imagem_amonio.png"
+},
+
+{
+  "question_id" : 22,
+  "question_type" : "escrever",
+  "enunciado" : "A água da chuva é naturalmente ácida em virtude da presença normal de CO[sub]2[/sub][sub](g)[/sub] (dióxido de carbono) na atmosfera, que reage com a água e forma o ácido de fórmula H[sub]2[/sub]CO[sub]3[/sub][sub](aq)[/sub]. O nome do ácido citado no texto é:",
+  "answer" : "acido carbonico",
+  "help" : "Se decompõe liberando CO[sub]2[/sub], e está presente em refrigerantes."
+},
+
+{
+  "question_id" : 23,
+  "question_type" : "escrever",
+  "enunciado" : "Os ácidos, segundo a teoria de dissociação de Arrhenius, são compostos moleculares que, ao ser dissolvidos em água, geram íons H[sup]+[/sup] [sub](aq)[/sub]. Como é chamado o processo de formação de íons que ocorre quando um ácido é dissolvido em água?",
+  "answer" : "ionizacao",
+  "help" : "Ácidos são compostos que em solução aquosa se ionizam obtendo cátions hidrogênios H[sup]+[/sup]"
+},
+
+{
+  "question_id" : 24,
+  "question_type" : "escrever",
+  "enunciado" : "Hidrácido de caráter moderado, utilizado na gravação de vidro?",
+  "answer" : "acido fluoridrico",
+  "help" : "Composto de um átomo de flúor e um de hidrogênio,em uma ligação covalente.",
+  "image" : "imagens/imagens_escrever/imagem_vidrogravado.png"
+},
+
+{
+  "question_id" : 25,
+  "question_type" : "escrever",
+  "enunciado" : "Utilizado na fabricação de explosivos e fertilizantes, é produzido a partir da reação entre o ácido sulfúrico e o nitrato de sódio.",
+  "answer" : "acido nitrico",
+  "help" : "É um ácido forte, solução aquosa incolor. Depois do ácido sulfúrico, é o mais produzido e usado pela indústria.",
+  "image" : "imagens/imagens_escrever/imagem_acidonitrico.png"
+},
+
+{
+"question_id" : 26,
+  "question_type" : "escrever",
+  "enunciado" : "Base utilizada na preparação de argamassa, produção de couro e em tratamento dentário, possui o nome comercial de cal hidratada:",
+  "answer" : "hidroxido de calcio",
+  "help" : "Sólido branco, pouco solúvel em água, sua preparação se dá pela hidratação do óxido de cálcio (CaO), que é conhecido como cal virgem.",
+  "image" : "imagens/imagens_escrever/imagem_cal.png"
+},
+
+{
+"question_id" : 27,
+  "question_type" : "escrever",
+  "enunciado" : "O ácido de fómula HCN é muito utilizado na fabricação de plásticos e pesticidas. Foi utilizado na Primeira Guerra Mundial como uma arma Química em câmaras de gás, por seu efeito letal, impedindo o transporte de oxigênio e gás carbônico no corpo. O nome desse ácido é:",
+  "answer" : "acido cianidrico",
+  "help" : "Em corrente sanguínea, esse ácido estabelece ligações estáveis com o ferro da hemoglobina, impedindo o transporte de oxigênio e gás carbônico. Em solução aquosa forma os íons H[sup]+[/sup] e CN[sup]-[/sup]."
+},
+
+{
+"question_id" : 28,
+  "question_type" : "escrever",
+  "enunciado" : "Em 1934 o engenheiro químico Arnold O. Beckman criou uma nova solução utilizando um tubo de vácuo amplificado integrado aos medidores e eletrodos, dando origem ao primeiro aparelho medidor de pH, que recebeu o nome de: ",
+  "answer" : "peagametro",
+  "help" : "O aparelho medidor de pH também recebia o nome de acidímetro"
+},
+
+{
+"question_id" : 29,
+  "question_type" : "escrever",
+  "enunciado" : "Quando misturamos um ácido com uma base, os cátions H[sup]+[/sup] reagem com os ânions OH[sup]-[/sup], liberando água e neutralizando o meio. Se a quantidade de cátions e ânions for igual, tem-se a reação denominada de: ",
+  "answer" : "neutralizacao total",
+  "help" : "Reações de neutralização parcial, ocorre quando a quantidade de íons H[sup]+[/sup] e OH[sup]-[/sup] liberados pelo ácido e pela base, respectivamente, é diferente."
+}
+]
